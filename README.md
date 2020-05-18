@@ -19,18 +19,18 @@ Overview
 Methodology and Limitations
 ---------------------------
 
-<p> In addition to the Basic Reproduction Number (R0), the model will make use of an estimate of initial infections. This estimate can be obtained either from a real number of cases [2][3][4] or retrospectively estimated based on the number of deaths.  Since other work usually includes useful options for R0, we focus on estimating the impact of social distancing changes. </p>
+In addition to the Basic Reproduction Number (R0), the model will make use of an estimate of initial infections. This estimate can be obtained either from a [real number of cases](https://coronavirus.1point3acres.com/) [\[2\]](https://covid19.healthdata.org/united-states-of-america) [\[3\]](http://www.khuang.io/covidtracker/) [\[4\]](https://www.worldometers.info/coronavirus/#countries) or [retrospectively estimated based on the number of deaths](http://www.uni-goettingen.de/de/document/download/ff656163edb6e674fdbf1642416a3fa1.pdf/Bommer%20&%20Vollmer%20(2020)%20COVID-19%20detection%20April%202nd.pdf).  Since other work usually includes useful options for R0, we focus on estimating the impact of social distancing changes. 
 <p> Many data sources can be used to measure the human behavior changes related to social distancing. However, most of this data is not available due to privacy concerns (eg. GPS data from cell phones). Other data sources, like the number of cars on a public street are readily accessible for purposes like measuring traffic for the daily commute. We will consider this an approximation of contact outside of a family circle. In this way, we can compare cars on the road before and during imposing social distancing measures. </p>	
 <p> As an example, the following  data sources might prove useful to measure the effect of distancing:
 
 * Traffic/weather cameras, and/or counters (such as live cameras from state departments of transportation, parks, tourism centers, or https://www.weatherbug.com/traffic-cam/) 
 * Cars or foot traffic in public areas (parks, beaches, etc)
 * Average traffic in stores per day
-* Tools like placemeter.com 
+* Tools like [placemeter.com](http://www.placemeter.com/)
 * Anonymous analysis of security camera footage (in stores, public transit, or other places)
-* Analysis based on mobile phones/apps (such as analysis released by Google)
+* Analysis based on mobile phones/apps (such as [analysis released by Google](https://www.google.com/covid19/mobility/))
 
-<p>	One of the options for data collection  we found was UP42 - a platform to retrieve satellite images and run analysis on them. This allows easy access to images of roads before and during social distancing, and it can automatically identify the number of cars. This can also be used to detect cars in parking lots near stores, beaches, office buildings, or other places of interest. This gives us a measurable difference in how many contacts people have in a specific area. The process can be repeated over many roads and multiple different times in a given area in order to refine the estimate. The result can then be used to set parameters in the pandemic modeling that correspond to actual observations for the local area. </p>
+<p>	One of the options for data collection  we found was UP42 - https://up42.com/ - a platform to retrieve satellite images and run analysis on them. This allows easy access to images of roads before and during social distancing, and it can automatically identify the number of cars. This can also be used to detect cars in parking lots near stores, beaches, office buildings, or other places of interest. This gives us a measurable difference in how many contacts people have in a specific area. The process can be repeated over many roads and multiple different times in a given area in order to refine the estimate. The result can then be used to set parameters in the pandemic modeling that correspond to actual observations for the local area. </p>
 <p>	Taken together, this helps us to understand:
 
 * Potential propagation within a smaller area (county, state, locality) (R0->Rt)
@@ -48,7 +48,7 @@ Methodology and Limitations
 * The number of cars on the street may not linearly represent the number of exposed contacts, which requires a separate study. To simplify this analysis, however, we assumed it to be linear. After performing this analysis across many areas and checking the historical data, we may be able to estimate a better fit for this relationship. For example, a future study might compare the actual death rate in densely populated areas vs sparse areas and control that they have similar traffic reduction.
 * For certain localities, where people do not frequently use vehicles, this specific technique of measuring vehicles will not apply.  In particular, most cities will have heavier foot or railway transit. 
 * The UP42 system seems to have a weak confidence level for vehicle detection in many cases, and this can likely be improved. 
-* While we assumed a linear impact on Rt, we expect increased accuracy by assigning different weights to the impact on Rt from measurements in different locations. 
+* While we assumed a linear impact on Rt, we expect increased accuracy by assigning [different weights to the impact on Rt](https://www.centerforhealthsecurity.org/our-work/pubs_archive/pubs-pdfs/2020/reopening-guidance-governors.pdf) from [measurements in different locations](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/). 
 Rt = Rretail * Wretail + Rgrocery * Wgrocery + Rrecreation* Wrecreation + Rtransit * Wtransit + Rworkplace * Wworkplace
 
 Getting Started (Example)
