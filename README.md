@@ -55,6 +55,13 @@ Getting Started (Example)
 ------------------------
 
 As stated in the beginning, we make no conclusions based on the data and analysis below. Instead, we simply apply this technique and show its results for a single roadway. Hopefully, this is instructive in applying a similar technique across many more data points. Using UP42, we selected a small area of road in San Jose, CA 95128, between I-880 and Stevens Creek Blvd, and we collected data from 3 points of the time, corresponding to a control, a time just before social distancing, and a time during social distancing: 2019-12-10, 2020-03-12, 2020-04-01  
+
+```
+        2019-12-10                    2020-03-12                     2020-04-01 
+```
+
+![2019-12-10](image1.jpg)  ![2020-03-12](image3.jpg)  ![2020-04-01](image2.jpg)
+
    
 Using UP42 analysis to calculate the number of cars, we observe:
 
